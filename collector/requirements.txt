@@ -1,0 +1,8 @@
+sqlalchemy
+psycopg2 == 2.9.3
+RPi.GPIO
+adafruit-circuitpython-sht31d
+adafruit-circuitpython-sgp30
+adafruit-circuitpython-pm25
+pandas
+scipy

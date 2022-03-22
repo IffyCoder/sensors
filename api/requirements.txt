@@ -1,0 +1,6 @@
+sqlalchemy
+psycopg2 == 2.9.3
+flask
+flask-sqlalchemy
+flask-cors
+pandas

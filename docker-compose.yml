@@ -1,0 +1,26 @@
+version: '3.3'
+services:
+  #  collector:
+  #  build: collector
+  #  devices:
+  #    - "/dev/i2c-1:/dev/i2c-1" 
+  #  depends_on:
+  #    - sensor_db
+        #    networks:
+        #- sensor_net
+  sensor_db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: sensor_db
+    ports:
+      - "5432:5432"
+        #    networks:
+        #      - sensor_net
+    volumes:
+      - pg_data:/var/lib/postgresql/data/
+
+volumes:
+  pg_data:
